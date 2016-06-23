@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="GDWPublishToolBar">
+            <rect key="frame" x="0.0" y="0.0" width="224" height="327"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PIx-Jk-037" userLabel="顶部">
+                    <rect key="frame" x="5" y="0.0" width="214" height="282"/>
+                    <color key="backgroundColor" red="0.86950710340000004" green="1" blue="0.88103967309999998" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cYV-E2-sYK" userLabel="底部">
+                    <rect key="frame" x="0.0" y="292" width="224" height="35"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tabbar-light" translatesAutoresizingMaskIntoConstraints="NO" id="Wb4-t0-0Ub">
+                            <rect key="frame" x="0.0" y="0.0" width="224" height="35"/>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ime-fj-Qw6">
+                            <rect key="frame" x="0.0" y="0.0" width="35" height="35"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="35" id="GRF-gb-ea6"/>
+                            </constraints>
+                            <state key="normal" image="post-@N"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Na9-34-9Xr">
+                            <rect key="frame" x="35" y="0.0" width="35" height="35"/>
+                            <state key="normal" image="post-#N"/>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.86950710340000004" green="1" blue="0.88103967309999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="Wb4-t0-0Ub" secondAttribute="trailing" id="1Wp-Gg-0ew"/>
+                        <constraint firstAttribute="height" constant="35" id="6Nj-iU-NBm"/>
+                        <constraint firstItem="Ime-fj-Qw6" firstAttribute="leading" secondItem="cYV-E2-sYK" secondAttribute="leading" id="K6Y-VU-NV8"/>
+                        <constraint firstItem="Wb4-t0-0Ub" firstAttribute="leading" secondItem="cYV-E2-sYK" secondAttribute="leading" id="VzD-2c-caN"/>
+                        <constraint firstAttribute="bottom" secondItem="Ime-fj-Qw6" secondAttribute="bottom" id="WhR-HR-NNI"/>
+                        <constraint firstAttribute="bottom" secondItem="Wb4-t0-0Ub" secondAttribute="bottom" id="dJm-Hg-HoX"/>
+                        <constraint firstAttribute="bottom" secondItem="Na9-34-9Xr" secondAttribute="bottom" id="iaq-v6-zf9"/>
+                        <constraint firstItem="Ime-fj-Qw6" firstAttribute="top" secondItem="cYV-E2-sYK" secondAttribute="top" id="k3r-Wh-5Gm"/>
+                        <constraint firstItem="Wb4-t0-0Ub" firstAttribute="top" secondItem="cYV-E2-sYK" secondAttribute="top" id="lvV-NK-gEK"/>
+                        <constraint firstItem="Na9-34-9Xr" firstAttribute="width" secondItem="Ime-fj-Qw6" secondAttribute="width" id="qct-Ks-je1"/>
+                        <constraint firstItem="Na9-34-9Xr" firstAttribute="top" secondItem="cYV-E2-sYK" secondAttribute="top" id="wGq-aH-Qop"/>
+                        <constraint firstItem="Na9-34-9Xr" firstAttribute="leading" secondItem="Ime-fj-Qw6" secondAttribute="trailing" id="zSW-wC-XBG"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="PIx-Jk-037" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="5" id="Eo5-p9-6o5"/>
+                <constraint firstAttribute="trailing" secondItem="cYV-E2-sYK" secondAttribute="trailing" id="Lxz-ce-QWt"/>
+                <constraint firstItem="cYV-E2-sYK" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Srk-pf-Qqa"/>
+                <constraint firstItem="cYV-E2-sYK" firstAttribute="top" secondItem="PIx-Jk-037" secondAttribute="bottom" constant="10" id="WmZ-za-es5"/>
+                <constraint firstAttribute="trailing" secondItem="PIx-Jk-037" secondAttribute="trailing" constant="5" id="aQ6-0u-OWh"/>
+                <constraint firstItem="PIx-Jk-037" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="jLr-BD-x8Z"/>
+                <constraint firstAttribute="bottom" secondItem="cYV-E2-sYK" secondAttribute="bottom" id="jwB-eo-R2O"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="topView" destination="PIx-Jk-037" id="iLG-Sp-QzS"/>
+            </connections>
+            <point key="canvasLocation" x="190" y="144.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="post-#N" width="19" height="19"/>
+        <image name="post-@N" width="19" height="19"/>
+        <image name="tabbar-light" width="320" height="49"/>
+    </resources>
+</document>

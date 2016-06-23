@@ -1,0 +1,57 @@
+//
+//  PrefixHeader.pch
+//  百思不得姐
+//
+//  Created by apple on 15/9/30.
+//  Copyright © 2015年 apple. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#ifdef __OBJC__ //  #ifdef __OBJC__ 和 #endif中的内容只会出现在OC源文件中
+
+/** 快速获得UI控件尺寸的分类 */
+#import "UIView+GDWViewGeometry.h"
+/** 获得类的所有成员变量的分类. */
+#import "NSObject+GDWRuntime.h"
+#import "UIImage+Tool.h"
+#import "UIImageView+GDWExtension.h"
+/** 字符串 */
+#import "NSString+GDWExtension.h"
+/** 全局常量 */
+#import "GDWConstant.h"
+/** 日期 */
+#import "NSDate+GDWDate.h"
+
+
+/**第三方框架  */
+#import "AFNetworking.h"
+#import "MJExtension.h"
+#import "SVProgressHUD.h"
+
+
+#ifdef DEBUG // 开发调试阶段
+#define GDWLog(...) NSLog(__VA_ARGS__);
+#else // 打包发布阶段
+#define GDWLog(...)
+#endif
+
+#define GDWWriteToPlist(obj, filename) [obj writeToFile:[NSString stringWithFormat:@"/Users/apple/Desktop/%@.plist", filename] atomically:YES];
+
+#define GDWLogFuc GDWLog(@"%s", __func__);
+
+/** 屏幕尺寸 */
+#define GDWScreenW [UIScreen mainScreen].bounds.size.width
+#define GDWScreenH [UIScreen mainScreen].bounds.size.height
+
+#define GDWColor(r, g, b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
+#define GDWColorA(r, g, b, a) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:a]
+#define GDWRandomColor GDWColor(arc4random_uniform(255), arc4random_uniform(255), arc4random_uniform(255))
+#define GDWGrayColor(v) GDWColor(v, v, v)
+#define GDWCommonGrayColor   GDWGrayColor(206)
+
+#endif
+
+
+#endif /* PrefixHeader_pch */

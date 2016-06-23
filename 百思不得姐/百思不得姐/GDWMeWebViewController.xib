@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GDWMeWebViewController">
+            <connections>
+                <outlet property="back" destination="boW-21-6pV" id="W56-PQ-I73"/>
+                <outlet property="forward" destination="i85-B4-T7U" id="tsB-4G-eaj"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="webView" destination="1hG-dg-n1G" id="mDZ-De-kqx"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="412" height="313"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1hG-dg-n1G">
+                    <rect key="frame" x="0.0" y="0.0" width="412" height="269"/>
+                    <animations/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </webView>
+                <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3pB-Qt-m7Y">
+                    <rect key="frame" x="0.0" y="269" width="412" height="44"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="iWg-l8-4DL"/>
+                    </constraints>
+                    <items>
+                        <barButtonItem enabled="NO" title="上一页" id="boW-21-6pV">
+                            <connections>
+                                <action selector="forward:" destination="-1" id="hLx-nQ-djI"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem enabled="NO" title="下一页" id="i85-B4-T7U">
+                            <connections>
+                                <action selector="back:" destination="-1" id="ajG-91-OIR"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem systemItem="flexibleSpace" id="WxQ-z3-49A"/>
+                        <barButtonItem systemItem="refresh" id="OjH-9F-tyZ">
+                            <connections>
+                                <action selector="refresh:" destination="-1" id="eoJ-4A-vwt"/>
+                            </connections>
+                        </barButtonItem>
+                    </items>
+                </toolbar>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="3pB-Qt-m7Y" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="6fQ-yI-du6"/>
+                <constraint firstAttribute="trailing" secondItem="3pB-Qt-m7Y" secondAttribute="trailing" id="FvX-pu-kSG"/>
+                <constraint firstAttribute="trailing" secondItem="1hG-dg-n1G" secondAttribute="trailing" id="IU8-Eh-no1"/>
+                <constraint firstItem="1hG-dg-n1G" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Zoe-US-Qk0"/>
+                <constraint firstItem="3pB-Qt-m7Y" firstAttribute="top" secondItem="1hG-dg-n1G" secondAttribute="bottom" id="mbq-9p-lPo"/>
+                <constraint firstItem="1hG-dg-n1G" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="nv6-oz-DZg"/>
+                <constraint firstAttribute="bottom" secondItem="3pB-Qt-m7Y" secondAttribute="bottom" id="xaY-fU-aXa"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="386" y="-8.5"/>
+        </view>
+    </objects>
+</document>

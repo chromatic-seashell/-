@@ -1,0 +1,25 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "58d985be-934d-4948-ae22-75ee1d6511f3++6204",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "58d985be-934d-4948-ae22-75ee1d6511f3++6204" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "58d985be-934d-4948-ae22-75ee1d6511f3++6204" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "5FEFC45A-BF85-47B0-BC0E-1A16AE3CD40B",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "58d985be-934d-4948-ae22-75ee1d6511f3++6204" : "yht\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "百思不得姐",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "分支2-代码重构\/百思不得姐.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "http:\/\/192.168.90.128\/svn\/bs",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "58d985be-934d-4948-ae22-75ee1d6511f3++6204"
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="oMq-y1-WYe" customClass="GDWTopicAudioView">
+            <rect key="frame" x="0.0" y="0.0" width="364" height="203"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imageBackground" translatesAutoresizingMaskIntoConstraints="NO" id="vu3-48-2Tl" userLabel="占位图片">
+                    <rect key="frame" x="0.0" y="20" width="364" height="25"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" id="F7d-vm-NyD"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0cz-iX-Uu0" userLabel="图片">
+                    <rect key="frame" x="0.0" y="0.0" width="364" height="203"/>
+                    <animations/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WHW-FD-dnG" userLabel="播放">
+                    <rect key="frame" x="146" y="66" width="71" height="71"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="71" id="ZCu-vy-uz4"/>
+                        <constraint firstAttribute="height" constant="71" id="uND-MY-YAR"/>
+                    </constraints>
+                    <state key="normal" image="playButtonPlay" backgroundImage="playButton"/>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B0g-Fw-ybs" userLabel="播放数">
+                    <rect key="frame" x="326.5" y="0.0" width="37.5" height="18"/>
+                    <animations/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0KI-kZ-QFf" userLabel="时长">
+                    <rect key="frame" x="326.5" y="185" width="37.5" height="18"/>
+                    <animations/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="vu3-48-2Tl" firstAttribute="top" secondItem="oMq-y1-WYe" secondAttribute="top" constant="20" id="0Bp-Nr-Csb"/>
+                <constraint firstItem="vu3-48-2Tl" firstAttribute="leading" secondItem="oMq-y1-WYe" secondAttribute="leading" id="2gv-my-FC2"/>
+                <constraint firstAttribute="trailing" secondItem="vu3-48-2Tl" secondAttribute="trailing" id="4A2-Jm-4tn"/>
+                <constraint firstAttribute="trailing" secondItem="B0g-Fw-ybs" secondAttribute="trailing" id="6bl-J4-MBq"/>
+                <constraint firstItem="0cz-iX-Uu0" firstAttribute="top" secondItem="oMq-y1-WYe" secondAttribute="top" id="89h-uO-cdS"/>
+                <constraint firstAttribute="trailing" secondItem="0cz-iX-Uu0" secondAttribute="trailing" id="Jsp-01-prj"/>
+                <constraint firstItem="WHW-FD-dnG" firstAttribute="centerY" secondItem="0cz-iX-Uu0" secondAttribute="centerY" id="aBS-oa-jJh"/>
+                <constraint firstAttribute="bottom" secondItem="0cz-iX-Uu0" secondAttribute="bottom" id="bNh-so-ga8"/>
+                <constraint firstItem="0cz-iX-Uu0" firstAttribute="leading" secondItem="oMq-y1-WYe" secondAttribute="leading" id="mc3-ya-J29"/>
+                <constraint firstAttribute="trailing" secondItem="0KI-kZ-QFf" secondAttribute="trailing" id="qu6-iC-P3G"/>
+                <constraint firstAttribute="bottom" secondItem="0KI-kZ-QFf" secondAttribute="bottom" id="s4A-f5-7Zm"/>
+                <constraint firstItem="WHW-FD-dnG" firstAttribute="centerX" secondItem="0cz-iX-Uu0" secondAttribute="centerX" id="uw2-oo-Lup"/>
+                <constraint firstItem="B0g-Fw-ybs" firstAttribute="top" secondItem="oMq-y1-WYe" secondAttribute="top" id="z2x-h4-4aw"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="audioPlayCountLable" destination="B0g-Fw-ybs" id="M7Y-gz-Oil"/>
+                <outlet property="audioTimeLable" destination="0KI-kZ-QFf" id="tfh-E2-ARG"/>
+                <outlet property="imageView" destination="0cz-iX-Uu0" id="Ama-JK-P2G"/>
+            </connections>
+            <point key="canvasLocation" x="234" y="-56.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="imageBackground" width="75" height="15"/>
+        <image name="playButton" width="63" height="63"/>
+        <image name="playButtonPlay" width="30" height="30"/>
+    </resources>
+</document>
